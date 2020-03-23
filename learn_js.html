@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+<script>
+function click_me(){
+  var mounth_one=1;
+  var mounth_two=2;
+  var diff_month = mounth_two-mounth_one;
+  var first_name="daniela";
+  var space=" ";
+  var last_name="Villalobos";
+  document.getElementById("demo").innerHTML = "GMS!";
+  document.getElementById("try").innerHTML="Daniela";
+  document.getElementById("dog").innerHTML=Date();
+  document.getElementById("diff").innerHTML=diff_month;
+  document.getElementById("daniela").innerHTML=first_name+space+last_name;
+}
+</script>
+
+<p id="demo">Himica.</p>
+<p id="try">School.</p>
+<p>Date : <span id="dog"> Jan 19 </span></p>
+<p>Difference : <span id="diff"> 0 </span></p>
+<p>first_name :<span id="daniela"></span></p>
+<button type="button" onclick="click_me()">Click Me!</button>
+
+</body>
+</html>

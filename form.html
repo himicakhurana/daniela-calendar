@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+<script>
+function myFunction(){
+var fname = document.getElementById("fname").value;
+var lname = document.getElementById("lname").value;
+var city= document.getElementById("city").value;
+var birthday=document.getElementById("date1").value;
+var time=document.getElementById("time1").value;
+var address=document.getElementById("name1").value;
+var streetname=document.getElementById("name1").value;
+var zipcode=document.getElementById("name1").value;
+var state=document.getElementById("name1").value;
+alert(fname+" "+lname);
+alert(city);
+alert(birthday);
+alert(time);
+alert(address);
+alert(streetname);
+alert(zipcode);
+alet(state);
+	document.getElementById("name1").innerHTML=fname
+  document.getElementById("date2").innerHTML=birthday
+	
+ event.preventDefault();
+
+
+
+}
+</script>
+<form id="form1" onsubmit="myFunction()">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Daniela "><br>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city" value=""><br>
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Villalobos"><br><br>
+  <label for="birthday">Birthday Party:</label>
+  <input type="date" id="date1" name="birthday">
+  <input type="time" name="eta" id="time1" name="time11">
+	<input for="address">Address:</label><br>
+	<input type="address" id="name1" name="address" value=2271 Eucild ave
+	<input type="streetname" id="name1" name="streetname" value=Eucild ave>
+	<label for="streetname">Streetname:</label><br>
+	<input type="zipcode" id="name1" name="zipcode" value=94303
+	<label for="zipcode">Zipcode</label><br>
+	<input type="state" id="name1" name="state" value=California
+	<label for="state">State</label><br>
+<input type="text" id="name1" name="address" value=2271 Eucild ave
+  <input type="submit" value="Submit">
+</form>
+<p id="name1"></p>
+<p id="date2"></p>
+</body>
+</html>

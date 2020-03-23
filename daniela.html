@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function click_me()
+{
+document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+var x=10;
+var y=15;
+if(x<y)
+{
+	document.getElementById("demo2").innerHTML ="x is smaller.";
+}else{
+	alert("y is smaller.")
+}
+var d=3;
+//&& = AND
+//|| = OR
+if(d==2 && x<y){
+	document.getElementById("demo3").innerHTML=" d is 2 ";
+alert(" d is 2 .");
+}else{
+alert (" d is not 2 .");
+}
+
+if(d==2 || x>y){
+	document.getElementById("demo3").innerHTML=" d is 2 ";
+alert(" d is 2 .");
+}else{
+alert (" d is not 2 .");
+}
+
+var msg1="Hi";
+var name="daniela";
+var bird=" ";
+var finalmsg=msg1+bird+name;
+document.getElementById("msg").innerHTML=finalmsg;
+var demo="himica";
+finalmsg=msg1+bird+demo;
+document.getElementById("msg2").innerHTML=finalmsg;
+
+var year=1999;
+var month=2;
+var date=31;
+if(year>2000&&year<2030){
+	document.getElementById("year").innerHTML="valid year"
+}else{
+ document.getElementById("year").innerHTML="invalid year"
+}
+
+if(month<12&&month>=1){
+	document.getElementById("month").innerHTML="valid month"
+
+}else{
+	document.getElementById("month").innerHTML="invalid month"
+}
+if(date<=31&&date>=1){
+	document.getElementById("day").innerHTML="valid day"
+}else{
+	document.getElementById("day").innerHTML="invalid day"
+}
+if(month==2&&date>29)
+alert("invalid february date")
+
+// if month is february(2) date is less than 29, elsenot so alert (invalid)
+
+}
+
+</script>
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1">Demo 1</p>
+<p id="demo2">Demo 2</p>
+<p id="demo3">Demo 3</p>
+
+<p id="msg">Message 1.</p>
+
+<p id="msg2">Message 2.</p>
+<p id="year">Year Message</p>
+<p id="month"> Month Message</p>
+<p id="day">Date Message</p>
+
+<button type="button" onclick='click_me()'>Click Me!</button>
+
+</body>
+</html>
